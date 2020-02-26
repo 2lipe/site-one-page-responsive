@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgba(234, 236, 239, 0.7);
+}
+
+/* configurações gerais */
+.clear {
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* */
+
+header {
+  background-color: rgba(187, 146, 99, 0.637);
+  padding: 10px 2% 40px 2%;
+}
+
+.logo-01 {
+  float: left;
+  width: 100px;
+  height: 70px;
+  background-color: indigo; /* trocar por logo */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-02 {
+  float: right;
+  width: 100px;
+  height: 70px;
+  background-color: indigo; /* trocar por logo */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.cover-form {
+  width: 100%;
+}
+
+.container-bg {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  background-image: url(../images/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container {
+  position: absolute;
+  right: 30px;
+  top: -18px;
+  width: 400px;
+  height: 107%;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(200, 200, 200, 0.5);
+}
+
+.form-container h2 {
+  background-color: rgba(234, 236, 239, 0.7);
+  padding: 30px 15px;
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.form-container form {
+  margin-top: 8px;
+  padding: 20px;
+}
+
+.form-container p {
+  font-size: 15px;
+  color: #525252;
+}
+
+.form-wraper:not(:first-child) {
+  margin-top: 40px;
+}
+
+.form-wraper:last-child {
+  margin-top: 20px;
+}
+
+.form-container form input[type="text"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(200, 200, 200, 0.5);
+}
+
+.form-container form input[type="submit"] {
+  background-color: #033c50;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+  border-radius: 3px;
+}
+
+section.chamada {
+  width: 100%;
+  text-align: center;
+}
+
+section.chamada .container {
+  padding: 80px 0 40px 0;
+  background-color: #9c6c37;
+}
+
+section.chamada h2 {
+  width: 96%;
+  max-width: 700px;
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-weight: normal;
+}
+section.chamada p {
+  width: 96%;
+  margin-top: 10px;
+  color: white;
+  font-weight: normal;
+}
+
+.flex-mosaico {
+  display: flex;
+  background-color: rgba(187, 146, 99, 0.637);
+}
+
+.flex-mosaico:not(:first-child) {
+  padding-top: 10px;
+}
+
+.img-mosaico {
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+}
+
+.txt-mosaico {
+  padding: 150px 40px;
+  width: 40%;
+}
+
+.txt-mosaico p {
+  color: #000000;
+}
+
+footer {
+  background-color: rgba(156, 107, 55, 0.74);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  color: #ffffff;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 510px) {
+  header {
+    text-align: center;
+  }
+
+  .logo-01,
+  .logo-02 {
+    margin-top: 10px;
+    display: inline-block;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container-bg {
+    text-align: center;
+    padding: 40px 0;
+    height: auto;
+  }
+
+  .form-container {
+    height: auto;
+    width: 96%;
+    max-width: 400px;
+    position: static;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-mosaico {
+    display: block;
+  }
+
+  .img-mosaico {
+    padding-top: 100%;
+    width: 100%;
+  }
+
+  .txt-mosaico {
+    text-align: justify;
+    width: 100%;
+  }
+}
